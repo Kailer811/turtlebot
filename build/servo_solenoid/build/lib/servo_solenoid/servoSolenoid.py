@@ -2,11 +2,19 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from rclpy.qos import qos_profile_sensor_data
+import RPi.GPIO as GPIO
+
+
+SolenoidPin = 20
+ServoPin = 29
 
 class LidarSubscriber(Node):
+    
+    
+
     def __init__(self):
         super().__init__('lidar_subscriber_node')
-        
+
         # 1. Create a variable to store the lidar data
         self.latest_scan = None 
 
@@ -18,6 +26,13 @@ class LidarSubscriber(Node):
             self.servoSolenoid,
             qos_profile_sensor_data)
         
+        
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(SolenoidPin, GPIO.OUT)
+        GPIO.output(SolenoidPin, GPIO.LOW)  
+        GPIO.setup(ServoPin, GPIO.OUT)
+        GPIO.output(ServoPin, GPIO.LOW)  
+
         self.get_logger().info('Lidar Subscriber Node has been started.')
 
     def servoSolenoid(self, msg):
@@ -29,8 +44,16 @@ class LidarSubscriber(Node):
             # Index 0 is usually directly in front of the TurtleBot
             front_distance = self.latest_scan.ranges[0]
             self.get_logger().info(f'Distance to front: {front_distance:.2f} m')
-            if front_distance == 1:
+            if front_distance < 1:
                 print("servo should have turned")
+                GPIO.output(SolenoidPin, GPIO.HIGH)
+                GPIO.output(ServoPin, GPIO.HIGH)   # was SolenoidPin twice
+            else:
+                GPIO.output(SolenoidPin, GPIO.LOW)
+                GPIO.output(ServoPin, GPIO.LOW)
+
+
+        
 
 def main(args=None):
     rclpy.init(args=args)
@@ -41,8 +64,10 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
+        GPIO.cleanup()
         lidar_subscriber.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
+
