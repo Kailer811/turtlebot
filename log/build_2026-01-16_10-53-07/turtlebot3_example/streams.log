@@ -1,0 +1,29 @@
+[3.298s] Invoking command in '/home/ubuntu/turtlebot3_ws/build/turtlebot3_example': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/turtlebot3_ws/build/turtlebot3_example/build --no-deps symlink_data
+[4.275s] running develop
+[4.807s] running egg_info
+[4.808s] creating turtlebot3_example.egg-info
+[4.808s] writing turtlebot3_example.egg-info/PKG-INFO
+[4.809s] writing dependency_links to turtlebot3_example.egg-info/dependency_links.txt
+[4.810s] writing entry points to turtlebot3_example.egg-info/entry_points.txt
+[4.810s] writing requirements to turtlebot3_example.egg-info/requires.txt
+[4.811s] writing top-level names to turtlebot3_example.egg-info/top_level.txt
+[4.812s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[4.820s] reading manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[4.823s] writing manifest file 'turtlebot3_example.egg-info/SOURCES.txt'
+[4.829s] running build_ext
+[4.830s] Creating /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages/turtlebot3-example.egg-link (link to .)
+[4.834s] Installing turtlebot3_absolute_move script to /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[4.834s] Installing turtlebot3_interactive_marker script to /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[4.835s] Installing turtlebot3_obstacle_detection script to /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[4.836s] Installing turtlebot3_patrol_client script to /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[4.836s] Installing turtlebot3_patrol_server script to /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[4.837s] Installing turtlebot3_relative_move script to /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/turtlebot3_example
+[4.838s] 
+[4.839s] Installed /home/ubuntu/turtlebot3_ws/build/turtlebot3_example
+[4.839s] running symlink_data
+[4.840s] creating /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/share/ament_index
+[4.840s] creating /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index
+[4.840s] creating /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[4.841s] symbolically linking /home/ubuntu/turtlebot3_ws/build/turtlebot3_example/resource/turtlebot3_example -> /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/share/ament_index/resource_index/packages
+[4.842s] symbolically linking /home/ubuntu/turtlebot3_ws/build/turtlebot3_example/package.xml -> /home/ubuntu/turtlebot3_ws/install/turtlebot3_example/share/turtlebot3_example
+[4.972s] Invoked command in '/home/ubuntu/turtlebot3_ws/build/turtlebot3_example' returned '0': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/turtlebot3_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/turtlebot3_ws/build/turtlebot3_example/build --no-deps symlink_data

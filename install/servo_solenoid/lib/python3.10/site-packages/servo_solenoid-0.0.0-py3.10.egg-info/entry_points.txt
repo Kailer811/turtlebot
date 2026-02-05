@@ -1,0 +1,3 @@
+[console_scripts]
+solenoid_node = servo_solenoid.servoSolenoid:main
+

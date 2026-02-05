@@ -1,0 +1,33 @@
+[3.829s] Invoking command in '/home/ubuntu/turtlebot3_ws/src/servo_solenoid': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/servo_solenoid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_solenoid build --build-base /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build install --record /home/ubuntu/turtlebot3_ws/build/servo_solenoid/install.log --single-version-externally-managed install_data
+[4.846s] running egg_info
+[4.848s] creating ../../build/servo_solenoid/servo_solenoid.egg-info
+[4.848s] writing ../../build/servo_solenoid/servo_solenoid.egg-info/PKG-INFO
+[4.850s] writing dependency_links to ../../build/servo_solenoid/servo_solenoid.egg-info/dependency_links.txt
+[4.850s] writing entry points to ../../build/servo_solenoid/servo_solenoid.egg-info/entry_points.txt
+[4.851s] writing requirements to ../../build/servo_solenoid/servo_solenoid.egg-info/requires.txt
+[4.851s] writing top-level names to ../../build/servo_solenoid/servo_solenoid.egg-info/top_level.txt
+[4.852s] writing manifest file '../../build/servo_solenoid/servo_solenoid.egg-info/SOURCES.txt'
+[4.859s] reading manifest file '../../build/servo_solenoid/servo_solenoid.egg-info/SOURCES.txt'
+[4.862s] writing manifest file '../../build/servo_solenoid/servo_solenoid.egg-info/SOURCES.txt'
+[4.862s] running build
+[4.863s] running build_py
+[4.863s] creating /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build
+[4.864s] creating /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build/lib
+[4.864s] creating /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build/lib/servo_solenoid
+[4.864s] copying servo_solenoid/__init__.py -> /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build/lib/servo_solenoid
+[4.865s] running install
+[4.866s] running install_lib
+[4.869s] creating /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid
+[4.870s] copying /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build/lib/servo_solenoid/__init__.py -> /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid
+[4.872s] byte-compiling /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid/__init__.py to __init__.cpython-310.pyc
+[4.873s] running install_data
+[4.874s] creating /home/ubuntu/turtlebot3_ws/install/servo_solenoid/share/ament_index
+[4.875s] creating /home/ubuntu/turtlebot3_ws/install/servo_solenoid/share/ament_index/resource_index
+[4.875s] creating /home/ubuntu/turtlebot3_ws/install/servo_solenoid/share/ament_index/resource_index/packages
+[4.875s] copying resource/servo_solenoid -> /home/ubuntu/turtlebot3_ws/install/servo_solenoid/share/ament_index/resource_index/packages
+[4.876s] copying package.xml -> /home/ubuntu/turtlebot3_ws/install/servo_solenoid/share/servo_solenoid
+[4.876s] running install_egg_info
+[4.883s] Copying ../../build/servo_solenoid/servo_solenoid.egg-info to /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid-0.0.0-py3.10.egg-info
+[4.889s] running install_scripts
+[4.969s] writing list of installed files to '/home/ubuntu/turtlebot3_ws/build/servo_solenoid/install.log'
+[5.085s] Invoked command in '/home/ubuntu/turtlebot3_ws/src/servo_solenoid' returned '0': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/servo_solenoid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_solenoid build --build-base /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build install --record /home/ubuntu/turtlebot3_ws/build/servo_solenoid/install.log --single-version-externally-managed install_data

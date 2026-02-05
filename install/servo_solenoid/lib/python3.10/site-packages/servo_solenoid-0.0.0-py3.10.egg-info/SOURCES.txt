@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/servo_solenoid/servo_solenoid.egg-info/PKG-INFO
+../../build/servo_solenoid/servo_solenoid.egg-info/SOURCES.txt
+../../build/servo_solenoid/servo_solenoid.egg-info/dependency_links.txt
+../../build/servo_solenoid/servo_solenoid.egg-info/entry_points.txt
+../../build/servo_solenoid/servo_solenoid.egg-info/requires.txt
+../../build/servo_solenoid/servo_solenoid.egg-info/top_level.txt
+../../build/servo_solenoid/servo_solenoid.egg-info/zip-safe
+resource/servo_solenoid
+servo_solenoid/__init__.py
+servo_solenoid/servoSolenoid.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

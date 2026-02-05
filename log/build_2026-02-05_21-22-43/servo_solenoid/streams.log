@@ -1,0 +1,24 @@
+[2.594s] Invoking command in '/home/ubuntu/turtlebot3_ws/src/servo_solenoid': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/servo_solenoid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_solenoid build --build-base /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build install --record /home/ubuntu/turtlebot3_ws/build/servo_solenoid/install.log --single-version-externally-managed install_data
+[3.563s] running egg_info
+[3.565s] writing ../../build/servo_solenoid/servo_solenoid.egg-info/PKG-INFO
+[3.566s] writing dependency_links to ../../build/servo_solenoid/servo_solenoid.egg-info/dependency_links.txt
+[3.567s] writing entry points to ../../build/servo_solenoid/servo_solenoid.egg-info/entry_points.txt
+[3.568s] writing requirements to ../../build/servo_solenoid/servo_solenoid.egg-info/requires.txt
+[3.569s] writing top-level names to ../../build/servo_solenoid/servo_solenoid.egg-info/top_level.txt
+[3.577s] reading manifest file '../../build/servo_solenoid/servo_solenoid.egg-info/SOURCES.txt'
+[3.581s] writing manifest file '../../build/servo_solenoid/servo_solenoid.egg-info/SOURCES.txt'
+[3.582s] running build
+[3.582s] running build_py
+[3.583s] copying servo_solenoid/servoSolenoid.py -> /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build/lib/servo_solenoid
+[3.584s] running install
+[3.585s] running install_lib
+[3.589s] copying /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build/lib/servo_solenoid/servoSolenoid.py -> /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid
+[3.591s] byte-compiling /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid/servoSolenoid.py to servoSolenoid.cpython-310.pyc
+[3.594s] running install_data
+[3.595s] running install_egg_info
+[3.602s] removing '/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid-0.0.0-py3.10.egg-info' (and everything under it)
+[3.603s] Copying ../../build/servo_solenoid/servo_solenoid.egg-info to /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid-0.0.0-py3.10.egg-info
+[3.609s] running install_scripts
+[3.689s] Installing solenoid_node script to /home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/servo_solenoid
+[3.691s] writing list of installed files to '/home/ubuntu/turtlebot3_ws/build/servo_solenoid/install.log'
+[3.806s] Invoked command in '/home/ubuntu/turtlebot3_ws/src/servo_solenoid' returned '0': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/servo_solenoid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/servo_solenoid build --build-base /home/ubuntu/turtlebot3_ws/build/servo_solenoid/build install --record /home/ubuntu/turtlebot3_ws/build/servo_solenoid/install.log --single-version-externally-managed install_data
