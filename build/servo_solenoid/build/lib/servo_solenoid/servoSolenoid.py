@@ -5,8 +5,8 @@ from rclpy.qos import qos_profile_sensor_data
 import RPi.GPIO as GPIO
 
 
-SolenoidPin = 20
-ServoPin = 29
+SolenoidPin = 19
+ServoPin = 21
 
 class LidarSubscriber(Node):
     
