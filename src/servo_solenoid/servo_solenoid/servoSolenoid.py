@@ -3,10 +3,19 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from rclpy.qos import qos_profile_sensor_data
 import RPi.GPIO as GPIO
+import time
 
 
 SolenoidPin = 19
 ServoPin = 21
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(SolenoidPin, GPIO.OUT)
+GPIO.output(SolenoidPin, GPIO.LOW)  
+GPIO.setup(ServoPin, GPIO.OUT)
+GPIO.output(ServoPin, GPIO.LOW) 
+pwm = GPIO.PWM(ServoPin, 50)
+pwm.start(0)
+
 
 class LidarSubscriber(Node):
     
@@ -27,11 +36,7 @@ class LidarSubscriber(Node):
             qos_profile_sensor_data)
         
         
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(SolenoidPin, GPIO.OUT)
-        GPIO.output(SolenoidPin, GPIO.LOW)  
-        GPIO.setup(ServoPin, GPIO.OUT)
-        GPIO.output(ServoPin, GPIO.LOW)  
+         
 
         self.get_logger().info('Lidar Subscriber Node has been started.')
 
@@ -47,7 +52,11 @@ class LidarSubscriber(Node):
             if front_distance < 1:
                 print("servo should have turned")
                 GPIO.output(SolenoidPin, GPIO.HIGH)
-                GPIO.output(ServoPin, GPIO.HIGH)   # was SolenoidPin twice
+                pwm.ChangeDutyCycle(2.5)
+                time.sleep(0.5)
+                pwm.ChangeDutyCycle(6.25)
+                time.sleep(0.5)
+
             else:
                 GPIO.output(SolenoidPin, GPIO.LOW)
                 GPIO.output(ServoPin, GPIO.LOW)
@@ -70,4 +79,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
