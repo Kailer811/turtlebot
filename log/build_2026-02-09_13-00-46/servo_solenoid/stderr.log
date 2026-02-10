@@ -1,0 +1,5 @@
+  File "/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid/servoSolenoid.py", line 53
+    if front_distance == 1 && count == 0:
+                            ^
+SyntaxError: invalid syntax
+

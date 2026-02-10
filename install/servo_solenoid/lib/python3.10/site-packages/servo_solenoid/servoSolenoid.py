@@ -49,17 +49,17 @@ class LidarSubscriber(Node):
             # Index 0 is usually directly in front of the TurtleBot
             front_distance = self.latest_scan.ranges[0]
             self.get_logger().info(f'Distance to front: {front_distance:.2f} m')
-            if front_distance < 1:
+            pwm.ChangeDutyCycle(2.5)
+            if front_distance <= 1.1 and front_distance >= 0.9:
                 print("servo should have turned")
                 GPIO.output(SolenoidPin, GPIO.HIGH)
-                pwm.ChangeDutyCycle(2.5)
-                time.sleep(0.5)
+                time.sleep(1)
+                GPIO.output(SolenoidPin, GPIO.LOW)
                 pwm.ChangeDutyCycle(6.25)
                 time.sleep(0.5)
 
-            else:
-                GPIO.output(SolenoidPin, GPIO.LOW)
-                GPIO.output(ServoPin, GPIO.LOW)
+            GPIO.output(SolenoidPin, GPIO.LOW)
+            GPIO.output(ServoPin, GPIO.LOW)
 
 
         
