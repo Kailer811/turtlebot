@@ -1,5 +1,0 @@
-  File "/home/ubuntu/turtlebot3_ws/install/servo_solenoid/lib/python3.10/site-packages/servo_solenoid/servoSolenoid.py", line 18
-    self.servoSolenoid
-    ^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-
