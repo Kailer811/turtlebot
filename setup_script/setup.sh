@@ -1,9 +1,10 @@
-sudo apt install python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
-sudo apt install ros-humble-hls-lfcd-lds-driver
-sudo apt install ros-humble-turtlebot3-msgs
-sudo apt install ros-humble-dynamixel-sdk
-sudo apt install ros-humble-xacro
-sudo apt install libudev-dev
+sudo apt update
+sudo apt install -y python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
+sudo apt install -y ros-humble-hls-lfcd-lds-driver
+sudo apt install -y ros-humble-turtlebot3-msgs
+sudo apt install -y ros-humble-dynamixel-sdk
+sudo apt install -y ros-humble-xacro
+sudo apt install -y libudev-dev
 mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
 git clone -b humble https://github.com/ROBOTIS-GIT/ld08_driver.git
@@ -23,13 +24,12 @@ echo 'export ROS_DOMAIN_ID=37 #TURTLEBOT3' >> ~/.bashrc
 source ~/.bashrc
 echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc # If you are using LDS-02
 source ~/.bashrc
-sudo apt update
 sudo apt install -y python3-pip git python3-jinja2 \
 ibboost-dev libgnutls28-dev openssl libtiff-dev pybind11-dev \
 qtbase5-dev libqt5core5a libqt5widgets5 meson cmake \
 python3-yaml python3-ply \
 libglib2.0-dev libgstreamer-plugins-base1.0-dev
-sudo apt install ros-humble-camera-ros
+sudo apt install -y ros-humble-camera-ros
 cd ~
 git clone -b v0.5.2 https://github.com/raspberrypi/libcamera.git
 cd libcamera
